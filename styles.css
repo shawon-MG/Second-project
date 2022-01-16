@@ -1,0 +1,248 @@
+#top-heading {
+  margin-left: 80px;
+}
+.section-one {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  align-items: space-around;
+}
+/* --NOTE: section one er heading with poppins (extra bold) google font----------*/
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+}
+.heading-one {
+  width: 600px;
+  height: 300px;
+}
+.heading-one img {
+  width: 70%;
+  padding-bottom: 200px;
+}
+/* ---NOTE: section 1 and 3 er jonno similar button use korbo. tai, same-button class diye define kore dilam -------- */
+.same-button {
+  background-color: orangered;
+  color: white;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+}
+#arrow-color {
+  color: white;
+}
+
+/* Adding animation to the image 
+------------------------ */
+#animation:hover {
+  transform: translate(50px) scale(1.3) rotate(30deg);
+  transition: transform 2s;
+}
+
+/*------------------------------------------------
+      Section 2 er css starts form here ! 
+-------------------------------------------------*/
+
+/* main heading of grid section ----- */
+#top-heading-2 {
+  text-align: center;
+  float: center;
+  margin-top: 200px;
+  font-size: 32px;
+}
+
+/* pura second section ta  */
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+/* single division of grid section  */
+.grid-div {
+  box-shadow: 2px 2px 2px 2px rgb(220, 214, 214);
+  border-radius: 10px;
+  width: 329px;
+  height: 476px;
+  padding: 10px 10px 10px 10px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.img {
+  text-align: center;
+}
+.img-description {
+  width: 329px;
+  height: 476px;
+  padding-left: 20px;
+}
+/* adding rating style from font awesome-------- */
+.fas {
+  color: orange;
+  font-size: 12px;
+}
+
+/* grid section er button 
+-------- */
+a {
+  float: right;
+  text-align: right;
+  position: right;
+  text-decoration: none;
+  color: orangered;
+  font-size: 20px;
+  margin-right: 200px;
+}
+#grid-arrow-icon {
+  color: orangered;
+  font-size: 20px;
+}
+/* footer styles css 
+ ----------------- */
+footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.footer-content {
+  color: white;
+  text-align: center;
+}
+.footer-icon {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.footer-icon-items {
+  padding: 15px;
+}
+
+#heading-section3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#image {
+  width: 500px;
+  height: 500px;
+}
+.contact-me {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.detail-div {
+  padding-left: 100px;
+  padding-top: 50px;
+  margin-top: 100px;
+  height: 100px;
+  width: 100px;
+}
+.massage-div {
+  padding-left: 200px;
+  padding-top: 50px;
+  margin-top: 100px;
+  height: 400px;
+  width: 300px;
+}
+.sizing-input {
+  height: 50px;
+  width: 250px;
+}
+.massage-area {
+  height: 245px;
+  width: 300px;
+}
+
+/* ---------------------------------------------------
+      Making this website responsive to phone and tab by adding media query CSS style 
+----------------------------------------- */
+/* For iphone-SE 
+--------------- */
+@media only screen and (max-width: 688px) {
+  .section-one {
+    flex-direction: column;
+    margin: auto;
+  }
+  .heading-one {
+    flex-direction: column;
+    margin: auto;
+  }
+  .heading-one img {
+    flex-direction: column;
+    position: relative;
+    width: 25%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .grid-div {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+  }
+  .img {
+    width: 100%;
+  }
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-div {
+    width: 25%;
+  }
+  .massage-div {
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+}
+
+/* ----For Ipad-Air
+---------------- */
+
+@media only screen and (max-width: 992px) {
+  .section-one {
+    display: flex;
+  }
+  .heading-one {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .heading-one img {
+    width: 80%;
+    padding-top: 150px;
+  }
+  #top-heading2 {
+    margin-top: 300px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-div {
+    width: 80%;
+    justify-content: center;
+    justify-items: center;
+  }
+  .img {
+    width: 100%;
+  }
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-div {
+    width: 27%;
+  }
+  .massage-div {
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+}
